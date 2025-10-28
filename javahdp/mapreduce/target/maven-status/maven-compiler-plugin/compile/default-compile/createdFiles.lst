@@ -1,0 +1,3 @@
+hadoop/ensias/mr/WordCount.class
+hadoop/ensias/mr/IntSumReducer.class
+hadoop/ensias/mr/TokenizerMapper.class

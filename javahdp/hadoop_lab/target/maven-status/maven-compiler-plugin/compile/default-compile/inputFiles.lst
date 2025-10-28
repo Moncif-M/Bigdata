@@ -1,0 +1,6 @@
+/home/Viber/hadoop/javahdp/hadoop_lab/src/main/java/edu/ensias/hadoop/HDFSWrite.java
+/home/Viber/hadoop/javahdp/hadoop_lab/src/main/java/edu/ensias/hadoop/WordCount.java
+/home/Viber/hadoop/javahdp/hadoop_lab/src/main/java/edu/ensias/hadoop/ReadHDFS.java
+/home/Viber/hadoop/javahdp/hadoop_lab/src/main/java/edu/ensias/hadoop/IntSumReducer.java
+/home/Viber/hadoop/javahdp/hadoop_lab/src/main/java/edu/ensias/hadoop/HadoopFileStatus.java
+/home/Viber/hadoop/javahdp/hadoop_lab/src/main/java/edu/ensias/hadoop/TokenizerMapper.java

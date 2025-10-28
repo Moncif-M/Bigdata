@@ -1,0 +1,6 @@
+edu/ensias/hadoop/ReadHDFS.class
+edu/ensias/hadoop/TokenizerMapper.class
+edu/ensias/hadoop/IntSumReducer.class
+edu/ensias/hadoop/HadoopFileStatus.class
+edu/ensias/hadoop/WordCount.class
+edu/ensias/hadoop/HDFSWrite.class
