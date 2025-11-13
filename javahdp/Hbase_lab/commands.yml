@@ -1,0 +1,35 @@
+create 'sales_ledger','customer','sales'
+list
+put 'sales_ledger','101','customer:name','John White'
+put 'sales_ledger','101','customer:city','Los Angeles, CA'
+put 'sales_ledger','101','sales:product','Chairs'
+put 'sales_ledger','101','sales:amount','$400.00'
+
+put 'sales_ledger','102','customer:name','Jane Brown'
+put 'sales_ledger','102','customer:city','Atlanta, GA'
+put 'sales_ledger','102','sales:product','Lamps'
+put 'sales_ledger','102','sales:amount','$200.00'
+
+put 'sales_ledger','103','customer:name','Bill Green'
+put 'sales_ledger','103','customer:city','Pittsburgh, PA'
+put 'sales_ledger','103','sales:product','Desk'
+put 'sales_ledger','103','sales:amount','$500.00'
+
+put 'sales_ledger','104','customer:name','Jack Black'
+put 'sales_ledger','104','customer:city','St. Louis, MO'
+put 'sales_ledger','104','sales:product','Bed'
+put 'sales_ledger','104','sales:amount','$1,600.00'
+
+get 'sales_ledger','102',{COLUMN => 'sales:product'}
+
+scan 'sales_ledger', {FILTER => "RowFilter(>, 'binary:102')"}
+
+scan 'sales_ledger', {FILTER => "FamilyFilter(=, 'binary:customer')"}
+scan 'sales_ledger', {FILTER => "QualifierFilter(=, 'binary:amount')"}
+scan 'sales_ledger', {FILTER => "ValueFilter(=, 'substring:Sofa')"}
+
+scan 'sales_ledger', {FILTER => "SingleColumnValueFilter('sales', 'amount', =, 'binary:$450.00')"}
+
+scan 'sales_ledger', {FILTER => "PrefixFilter('10')"}
+scan 'sales_ledger', {FILTER => "PageFilter(2)"}
+exit
